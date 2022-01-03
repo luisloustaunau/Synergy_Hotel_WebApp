@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+SYNERGY Hotel APP for booking, viewing and handeling reservations (For clients and employees)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
+Synergy Hotel Mangament System is an application for both users and employees to interact with our organization. Users can login, make reservations, view/update existing reservations, and manage their accounts. Employees can view and manage reservations. Our application includes a fully integrated calendar API (FullCalendar) for vacation planning as well as an API to check the weather at our many locations.
 
-## Available Scripts
+Technologies used:
 
-In the project directory, you can run:
+RDBMS for persistence
+API built with Java 8 and Spring 5
+Java API uses Hibernate to communicate with a PostGreSQL RDBMS
+Java API leverages the Spring Framework
+Java API is RESTful (JWTs)
+Complete CI/CD pipelines uses AWS (CodePipeline, CodeBuild, Elastic Beanstalk, and S3)
 
-### `npm start`
+Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+(Clients)
+Sign up for an account
+Log in and out
+Change information: first name, last name, email, and password
+Make reservations for specific dates
+Make specific accommodation requests
+Update reservation dates
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+(Employees)
+Log in and out
+Change information: first name, last name, and password
+Approve or Deny reservations
+Change room availability
+View the status of all rooms
 
-### `npm test`
+(Managers)
+All abilities that an Employee has
+Add employee and other manager accounts
+Change room prices by changing amenity prices
+Add rooms to the system
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Application  leverages at two external APIs
+RDBMS is deployed to the cloud (AWS RDS)
+Java API is deployed to the cloud (AWS EC2)
+UI application is deployed to the cloud (AWS S3)
+Java API has 80% test coverage for service layer
+Java API leverages Spring's MockMvc for integration/e2e tests of controller endpoints
+Java API will be adequately documented (Java Docs and web endpoint documentation [Swagger/OpenAPI])
 
-### `npm run build`
+Getting Started:
+git clone https://github.com/luisloustaunau
+npm install
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Back End:
+https://github.com/JennicaLeClerc/Synergy_Project2_Backend.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
